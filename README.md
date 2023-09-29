@@ -35,9 +35,26 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
-1. Create a folder called redux - inside it create file called provider.js, slice.js, store.js
-2. store.js file holds call the data which passed to redux from the app
-3. providers.js - the acts as the wrapper to connect the next-app with the redux
+1. Redux is used for state mangement of application lets say there are 50 components and we need to pass data between 2nd component to 50th component in this case we use redux.
+2. Redux tool kit is the advanced version of react.
+3. Redux main concept are -- (Action + Reducer = Slice in redux toolkit)
+   1. Action
+   2. Reducer
+   3. Store
+   4. Dispatcher, Selected
+4. For state management useState, redux toolkit and context is used ( context cannot be used for larger application coz it reduces application performance )
+5. Redux vs Reedux ToolKit
+   1. Both has same purpose and use
+   2. we need to write more code in redux
+   3. Redux toolkit is wrapper of Redux
+   4. Action and reducer come under slice
+6. Create a folder called redux - inside it create file called provider.js, slice.js, store.js
+7. store.js file holds call the data which passed to redux from the app
+8. providers.js - the acts as the wrapper to connect the next-app with the redux.
+
+9. Create a folder called redux - inside it create file called provider.js, slice.js, store.js
+10. store.js file holds call the data which passed to redux from the app
+11. providers.js - the acts as the wrapper to connect the next-app with the redux
 
 Interview Question
 
