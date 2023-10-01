@@ -60,3 +60,23 @@ Interview Question
 
 1. How will be the data flow of Redux ? - Bi-directional or Uni-directional ?
    - It will be Unidirection i.e., View/UI --> (through dispatch) (Action --> Reducer = Slice) --> Sttore --> (through Subscribe) --> View/UI .
+
+---
+
+1. A slice is a collection of Redux reducer logic and action for a single feature in your app. In slice we define action and reducer in a single file.
+   -- Send data from Next to Redux
+   i). Get Data from input field to State
+   ii). Import Action function from slice
+   iii). use dispatch hook for send data in action
+   iv). check data in slice
+
+Redux dev tools
+
+1. check action with redux dev tool
+2. Don't store sensitive data in redux store
+
+Get Data from Redux to Next
+
+1. Import useSelector Hook
+2. Display list of users
+3. Add style with user list
