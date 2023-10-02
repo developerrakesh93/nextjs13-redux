@@ -98,7 +98,7 @@ Redux with Local Storage
 3. Local storage - helps when Browser is closed or Tab closed or Page refreshed , the data will not get affected
 4. We store data inside the reducer and by default it will be inside promise so it will be displayed as Proxy(Array) to remove this use current . Then use current
 5. There can be multiple slice in the project
-<<<<<<< HEAD
+   <<<<<<< HEAD
 6. useSelector --(Get data from the redux) and useDispatch -- (Set data inside redux store) how to both in same component -- these 2 hooks are from connector react-redux from npm library
 
 ---
@@ -141,6 +141,5 @@ Redux Interview Questions.
     1. MobX
     2. Recoil- Facebook
     3. context API - if application is small
-11. Redux devtool is used to degbug application
-=======
->>>>>>> f7bf8d2 (added new code)
+11. # Redux devtool is used to degbug application
+    > > > > > > > f7bf8d2 (added new code)
