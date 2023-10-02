@@ -80,3 +80,21 @@ Get Data from Redux to Next
 1. Import useSelector Hook
 2. Display list of users
 3. Add style with user list
+4. While using redux make it as client component
+
+Interview Question :
+
+1. In one react application only one store is used
+
+---
+
+Redux data between the pages
+use same useDispatch method
+
+Redux with Local Storage
+
+1. We can use redux with local storage.
+2. Redux helps in transferring data between the components
+3. Local storage - helps when Browser is closed or Tab closed or Page refreshed , the data will not get affected
+4. We store data inside the reducer and by default it will be inside promise so it will be displayed as Proxy(Array) to remove this use current . Then use current
+5. There can be multiple slice in the project
