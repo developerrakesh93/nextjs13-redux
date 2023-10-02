@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { removeProduct } from "../redux/slice";
 
 const page = () => {
-  const userList = useSelector((data) => data.products);
+  const userList = useSelector((data) => data.productData.products);
   const dispatch = useDispatch();
   return (
     <div>

@@ -4,7 +4,6 @@ import { useDispatch } from "react-redux";
 import { addProduct } from "../redux/slice";
 import Link from "next/link";
 
-
 const AddProducts = () => {
   const dispatcher = useDispatch();
   const [productName, setProductName] = useState("");
@@ -25,6 +24,16 @@ const AddProducts = () => {
         Add Product
       </button>
       <Link href="/removeProduct">Remove Product </Link>
+      <br />
+      <br />
+      <Link href="/todolist">Go to to do list </Link>
+      <br />
+      <br />
+      <Link href="/apiproducts">Go to API user</Link>
+      <br />
+      <br />
+      <br />
+      <br />
     </div>
   );
 };
