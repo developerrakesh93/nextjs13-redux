@@ -43,7 +43,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
    3. Store
    4. Dispatcher, Selected
 4. For state management useState, redux toolkit and context is used ( context cannot be used for larger application coz it reduces application performance )
-5. Redux vs Reedux ToolKit
+5. Redux vs Redux ToolKit
    1. Both has same purpose and use
    2. we need to write more code in redux
    3. Redux toolkit is wrapper of Redux
@@ -98,3 +98,46 @@ Redux with Local Storage
 3. Local storage - helps when Browser is closed or Tab closed or Page refreshed , the data will not get affected
 4. We store data inside the reducer and by default it will be inside promise so it will be displayed as Proxy(Array) to remove this use current . Then use current
 5. There can be multiple slice in the project
+6. useSelector --(Get data from the redux) and useDispatch -- (Set data inside redux store) how to both in same component -- these 2 hooks are from connector react-redux from npm library
+
+---
+
+API call with Redux toolkit
+
+1. Make API page for display API data
+2. Make API call in Slice
+3. Make reducer for API call
+4. Display API data on UI
+
+When API is called it will return promise to handle this in redux we will make use of createAsyncThunk
+
+Redux Interview Questions.
+
+1. Redux core principle : single source of truth (Only object will be created in a store), state is read only, changes are madewith pure(reducers are pure functions) functions.
+2. what is Redux
+   1. State management library
+   2. with redux we can share data between components
+   3. Redux can be used with any javascript library
+3. Can we create 2 store in redux - No only one store can be created.
+4. Redux vs Redux ToolKit
+   1. Both has same purpose and use
+   2. we need to write more code in redux
+   3. Redux toolkit is wrapper of Redux
+   4. Action and reducer come under slice
+5. Difference between store and state
+   1. The store is an object that holds the entire stateof the application
+   2. The state is the data that application needs to render its UI.
+6. What is Provider in react-redux ?
+   1. The Provider is a component in React-Redux
+   2. Makes Redux store available to any component of application.
+7. What are the popular middleware?
+   To handle promise data we use middleware in redux .
+   Redux thunk (Inside Redux tool kit by default Thunk is used), Redux Saga, Redux Observable
+8. What is the use of Slice
+   Slice is a collection of reducer and action
+9. Redux main components - Action, reducer, store and Provider
+10. Alternative to redux-
+    1. MobX
+    2. Recoil- Facebook
+    3. context API - if application is small
+11. Redux devtool is used to degbug application

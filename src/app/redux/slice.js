@@ -1,6 +1,7 @@
 const { createSlice, nanoid, current } = require("@reduxjs/toolkit");
 
 const initialState = {
+  userAPIData: [],
   products: JSON.parse(localStorage.getItem("products"))
     ? JSON.parse(localStorage.getItem("products"))
     : [],
@@ -29,6 +30,13 @@ const Slice = createSlice({
       let userData = JSON.stringify(data);
       localStorage.setItem("products", userData);
     },
+  },
+  extraReducers: (builder) => {
+    builder.addCase(fetchApiData.fulfilled, (state, action) => {
+      console.log("reducer", action);
+      state.isloading = false;
+      state.userAPIData = action.payload;
+    });
   },
 });
 
