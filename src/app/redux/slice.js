@@ -1,10 +1,12 @@
+
 const { createSlice, nanoid, current } = require("@reduxjs/toolkit");
 
 const initialState = {
   products: JSON.parse(localStorage.getItem("products"))
     ? JSON.parse(localStorage.getItem("products"))
     : [],
-};
+}
+
 const Slice = createSlice({
   name: "addProductSlice",
   initialState,

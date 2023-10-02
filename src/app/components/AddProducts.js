@@ -4,6 +4,7 @@ import { useDispatch } from "react-redux";
 import { addProduct } from "../redux/slice";
 import Link from "next/link";
 
+
 const AddProducts = () => {
   const dispatcher = useDispatch();
   const [productName, setProductName] = useState("");
